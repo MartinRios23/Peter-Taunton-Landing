@@ -1,0 +1,307 @@
+/*GENERALES*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+  font-size: 16px;
+  position: relative;
+  height: 100%;
+  font-family: "Montserrat" !important;
+}
+
+.button {
+  border-radius: 1px;
+  padding: 1.3%;
+  background-color: #fc692a;
+  font-weight: 500;
+  letter-spacing: 1px;
+  word-break: break-all;
+}
+
+.button:hover{
+  box-shadow: 0px 0px 7px #fc692a;
+  text-decoration: none  !important;
+}
+
+
+a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+h1,
+h2,
+p {
+  color: white;
+  margin-bottom: 4%;
+}
+
+/*NAVBAR*/
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0% 5%;
+  display: flex;
+  height: 12%;
+  width: 100%;
+  background-color: black;
+}
+
+#logoUp {
+  width: 40%;
+}
+
+#navbar a {
+  margin: 20px;
+  font-size: 0.8rem;
+  transition: all .3s;
+  display: none;
+}
+
+
+#menuEscondido{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 12%;
+  right: 0;
+  background-color: #fc692a;
+  height: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: all 2s;
+  transform: translateZ(-200%);
+}
+
+#menuEscondido a{
+  display: block;
+  color: white;
+  font-size: 1.2rem;
+}
+
+#menuEscondido.active{
+  height: 115%;
+  transform: translateZ(0%);
+}
+
+#menuEscondido a:first-child{
+  margin-top: 20%;
+}
+
+.btnShow{
+  display: flex;
+  position: absolute;
+  width: 5vmax;
+  right: 6%;
+  top: 3%;
+}
+
+/*HOME*/
+
+#home {
+  display: flex;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 8%,
+      rgba(0, 0, 0, 0) 70%
+    ),
+    url("https://www.content.petertaunton.com/wp-content/uploads/2020/07/mobile-4.jpg");
+}
+
+.btnShow{
+  display: flex;
+  position: absolute;
+  width: 5vmax;
+  right: 6%;
+  top: 3%;
+}
+
+#home #containerText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0% 3%;
+  margin-top: 60%;
+  padding: 2%;
+  width: 100%;
+  text-align: center;
+}
+
+#home #containerText > a {
+  margin: 0;
+  border: 1px solid white;
+  border-radius: 2px;
+  width: 85%;
+  display: block;
+  text-align: center;
+  padding: 3%;
+  padding-left: 5%;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  word-break: break-all;
+}
+
+#home #containerText > a:hover{
+  transition: all .4s;
+  background-color: #ff570d;
+  border: none;
+}
+
+#home #containerText > a::after {
+  margin-left: 5%;
+  content: ">";
+}
+
+
+#home h1 {
+  font-family: "Bebas Neue";
+  font-size: 3.5rem;
+  font-weight: normal;
+  line-height: 90%;
+}
+
+#home h2 {
+  color: #ff570d;
+  display: none;
+}
+
+#home p {
+  line-height: 30px;
+  font-weight: 500;
+  display: none;
+}
+
+
+
+@media screen and (min-width: 600px){
+  #home {
+    background-position: right;
+    background-image: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 1) 8%,
+        rgba(0, 0, 0, 0) 70%
+      ),
+      url("https://www.content.petertaunton.com/wp-content/uploads/2020/05/about.jpg");
+
+  }
+
+  .btnShow{
+    width: 5vmin;
+    right: 6%;
+    top: 3.2%;
+  }
+
+  #menuEscondido a{
+    font-size: 1.7em;
+    margin: 30px;
+  }
+
+  #home #containerText {
+    margin: 0% 1%;
+    margin-top: 15%;
+    margin-left: 3%;
+    padding: 1%;
+    width: 40%;
+
+  }
+
+  #home #containerText > a {
+    width: 93%;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 993px){
+  /*NAVBAR*/
+  #navbar {
+    padding: 0% 3%;
+  }
+
+  #navbar a {
+    display: initial;
+    margin: 15px;
+  }
+
+  #navbar a:hover{
+    text-decoration: underline;
+    opacity: .9;
+  }
+
+  #right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+  }
+
+  .menuEscondido{
+    display: none;
+  }
+
+  .btnShow{
+    display: none;
+  }
+
+  /*HOME*/
+
+  #home {
+    height: 88%;
+    background-image: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 1) 8%,
+        rgba(0, 0, 0, 0) 70%
+      ),
+      url("https://www.content.petertaunton.com/wp-content/uploads/2020/05/about.jpg");
+  }
+
+  #home #containerText {
+    text-align: left;
+    margin-top: 3%;
+    padding: 3%;
+    width: 40%;
+  }
+
+  #home #containerText > a {
+    margin-left: -40%;
+    width: 60%;
+    font-size: 0.8em;
+    font-weight: 800;
+    word-break: break-all;
+    text-align: left;
+  }
+
+
+  #home #containerText > a:hover{
+    transition: all .4s;
+    background-color: #ff570d;
+    border: none;
+  }
+
+  #home #containerText > a::after {
+    content: ">";
+  }
+
+
+  #home h1 {
+    font-size: 5rem;
+  }
+
+
+}
+

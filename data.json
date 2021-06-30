@@ -1,0 +1,26 @@
+{
+	"menu": 
+	{
+		"logo": "https://www.content.petertaunton.com/wp-content/uploads/2020/04/logo.png",
+		"options":
+		[
+			{ "name": "Facebook", "url": "https://www.facebook.com/" },
+			{ "name": "Twitter", "url": "https://twitter.com/" },
+			{ "name": "Youtube", "url": "https://www.youtube.com/" },
+			{ "name": "Connect with Peter", "url": "https://www.instagram.com/", "class": "button" }
+		]
+	},
+	"banner":
+	{
+		"title": "TAKE YOUR BUSINESS TO THE NEXT LEVEL",
+		"tag": "TAG",
+		"text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+		"image_web": "https://www.content.petertaunton.com/wp-content/uploads/2020/05/about.jpg",
+		"image_mobile": "https://www.content.petertaunton.com/wp-content/uploads/2020/07/mobile-4.jpg",
+		"buttons":
+		[
+			{ "name": "Connect with Peter", "url": "https://twitter.com/", "target": "_blank" },
+			{ "name": "Connect with Peter", "url": "https://instagram.com/", "target": "_self" }
+		]
+	}	
+}
